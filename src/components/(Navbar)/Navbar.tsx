@@ -3,10 +3,10 @@
 import React, { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import Logo from "src/assets/Logo.png"
-import Link from "./NavLink"
-import { SelectedPage } from "../../shared/types"
-import useMediaQuery from "../../hooks/useMediaQuery"
-import ActionButton from "../../shared/ActionButton"
+import Link from "src/components/(Navbar)/NavLink"
+import { SelectedPage } from "src/shared/types"
+import useMediaQuery from "src/hooks/useMediaQuery"
+import ActionButton from "src/shared/ActionButton"
 import Image from "next/image"
 
 type Props = {
@@ -56,7 +56,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>sign In</p>
+                  <p>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>

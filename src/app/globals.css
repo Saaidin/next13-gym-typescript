@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
-
 html,
-body,
-#root,
-.app {
+body {
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
   @apply text-gray-500;
+}
+
+h1 {
+  @apply !font-montserrat;
 }

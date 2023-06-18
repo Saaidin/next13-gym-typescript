@@ -1,13 +1,13 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import Navbar from "../components/(Navbar)/Navbar"
+import Hero from "../components/Hero"
+import Benefits from "src/components/(Benefits)/Benefits"
+import OurClasses from "src/components/(OurClasses)/OurClasses"
+import ContactUs from "src/components/ContactUs"
+import Footer from "src/components/Footer"
+import { useEffect, useState } from "react"
 import { SelectedPage } from "../shared/types"
-import Home from "./scenes/home"
-import Benefits from "./scenes/benefits"
-import OurClasses from "@/scenes/ourClasses"
-import ContactUs from "@/scenes/contactUs"
-import Footer from "@/scenes/footer"
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -35,11 +35,11 @@ export default function Home() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      {/* <Home setSelectedPage={setSelectedPage} /> */}
-      {/* <Benefits setSelectedPage={setSelectedPage} /> */}
-      {/* <OurClasses setSelectedPage={setSelectedPage} /> */}
-      {/* <ContactUs setSelectedPage={setSelectedPage} /> */}
-      {/* <Footer /> */}
+      <Hero setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
