@@ -1,4 +1,4 @@
-import { SelectedPage, ClassType } from "src/shared/types"
+import { SelectedPage } from "src/shared/types"
 import image1 from "src/assets/image1.png"
 import image2 from "src/assets/image2.png"
 import image3 from "src/assets/image3.png"
@@ -8,6 +8,13 @@ import image6 from "src/assets/image6.png"
 import { motion } from "framer-motion"
 import HText from "src/shared/HText"
 import Class from "src/components/(OurClasses)/Class"
+import { StaticImageData } from "next/image"
+
+interface ClassType {
+  name: string
+  description?: string
+  image: StaticImageData
+}
 
 const classes: Array<ClassType> = [
   {
